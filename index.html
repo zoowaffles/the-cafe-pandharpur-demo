@@ -47,15 +47,6 @@
       color: #ffffff;
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
-    .neon-text-glow {
-      text-shadow: 0 0 20px rgba(255, 229, 0, 0.45);
-    }
-    .red-glow {
-      box-shadow: 0 0 25px rgba(255, 42, 42, 0.35);
-    }
-    .yellow-glow {
-      box-shadow: 0 0 25px rgba(255, 229, 0, 0.3);
-    }
     .marquee-track {
       display: flex;
       width: max-content;
@@ -65,7 +56,6 @@
       0% { transform: translateX(0%); }
       100% { transform: translateX(-50%); }
     }
-    /* Logo Emblem Recreation */
     .logo-circle {
       background: #08080a;
       border: 2px solid #FF2A2A;
@@ -88,29 +78,29 @@
 </head>
 <body class="selection:bg-neonYellow selection:text-black pb-20 lg:pb-0">
 
-  <!-- LIVE MARQUEE TICKER (URBAN VIBE) -->
+  <!-- LIVE MARQUEE TICKER -->
   <div class="bg-chiliRed text-white py-1.5 overflow-hidden border-b border-black select-none text-xs font-black uppercase tracking-widest">
     <div class="marquee-track flex items-center gap-8">
-      <span>🔥 FRESH STEAMING DARJEELING MOMOS & SPICY DIP</span>
+      <span>🔥 FRESH STEAMING DARJEELING MOMOS & SPICY CHUTNEY</span>
       <span>•</span>
       <span>⭐ 4.5 STAR RATED GOURMET SPOT IN GOKUL NAGAR</span>
       <span>•</span>
       <span>🍕 CRISPY STONE-CRUST PIZZAS & BURGERS</span>
       <span>•</span>
-      <span>🎂 CELEBRATION & BIRTHDAY BOOTH BOOKINGS LIVE</span>
+      <span>🎂 CELEBRATION & BIRTHDAY BOOTH BOOKINGS LIVE: +91 99605 02985</span>
       <span>•</span>
-      <span>🔥 FRESH STEAMING DARJEELING MOMOS & SPICY DIP</span>
+      <span>🔥 FRESH STEAMING DARJEELING MOMOS & SPICY CHUTNEY</span>
       <span>•</span>
       <span>⭐ 4.5 STAR RATED GOURMET SPOT IN GOKUL NAGAR</span>
       <span>•</span>
       <span>🍕 CRISPY STONE-CRUST PIZZAS & BURGERS</span>
       <span>•</span>
-      <span>🎂 CELEBRATION & BIRTHDAY BOOTH BOOKINGS LIVE</span>
+      <span>🎂 CELEBRATION & BIRTHDAY BOOTH BOOKINGS LIVE: +91 99605 02985</span>
       <span>•</span>
     </div>
   </div>
 
-  <!-- FLOATING ULTRA-MODERN NAVBAR -->
+  <!-- FLOATING NAVBAR -->
   <header class="sticky top-0 z-40 bg-obsidian/90 backdrop-blur-xl border-b border-borderYellow transition-all">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       
@@ -141,39 +131,43 @@
         <a href="#reviews" class="hover:text-neonYellow transition-colors">Patron Reviews</a>
       </nav>
 
-      <!-- Cart Trigger & Action -->
+      <!-- Cart Trigger & Call/Book Action -->
       <div class="flex items-center gap-3">
+        <a href="tel:+919960502985" class="hidden sm:inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-surfaceCard border border-white/10 hover:border-neonYellow text-xs font-bold text-stone-300 hover:text-white transition-all">
+          <i class="fa-solid fa-phone text-neonYellow"></i> +91 99605 02985
+        </a>
+
         <button onclick="toggleCartDrawer(true)" class="relative px-4 py-2.5 rounded-xl bg-surfaceDark border border-borderYellow hover:border-neonYellow text-neonYellow transition-all flex items-center gap-2.5">
           <i class="fa-solid fa-bag-shopping text-sm"></i>
           <span class="text-xs font-bold text-white hidden sm:inline">Bag</span>
           <span id="navCartCount" class="w-5 h-5 rounded-full bg-neonYellow text-black text-[11px] font-black flex items-center justify-center">0</span>
         </button>
 
-        <a href="#reservation" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-neonYellow hover:bg-neonYellowHover text-black font-black text-xs uppercase tracking-wider transition-all shadow-lg shadow-neonYellow/20">
+        <a href="#reservation" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-neonYellow hover:bg-neonYellowHover text-black font-black text-xs uppercase tracking-wider transition-all shadow-lg shadow-neonYellow/20">
           <i class="fa-solid fa-sparkles"></i> Reserve Booth
         </a>
       </div>
     </div>
   </header>
 
-  <!-- RADICAL HERO SECTION (EDITORIAL MAGAZINE AESTHETIC) -->
+  <!-- HERO SECTION -->
   <section class="relative pt-12 pb-20 px-4 overflow-hidden border-b border-white/10">
     <div class="max-w-7xl mx-auto">
       
-      <!-- Top Badges & Meta -->
       <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
         <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surfaceCard border border-borderYellow text-xs font-bold text-neonYellow">
           <span class="w-2.5 h-2.5 rounded-full bg-chiliRed animate-pulse"></span>
           KITCHEN LIVE: 10:30 AM – 10:30 PM DAILY
         </div>
         <div class="flex items-center gap-4 text-xs font-bold text-stone-400">
-          <span><i class="fa-solid fa-location-dot text-chiliRed mr-1.5"></i> Gokul Nagar, Isbavi</span>
+          <a href="tel:+919960502985" class="hover:text-neonYellow transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-phone text-neonYellow"></i> Hotline: +91 99605 02985
+          </a>
           <span>•</span>
-          <span><i class="fa-solid fa-star text-neonYellow mr-1.5"></i> 4.5 / 5.0 (400+ Patrons)</span>
+          <span><i class="fa-solid fa-location-dot text-chiliRed mr-1"></i> Gokul Nagar, Isbavi</span>
         </div>
       </div>
 
-      <!-- Main Headline Grid -->
       <div class="grid lg:grid-cols-12 gap-10 items-center">
         
         <div class="lg:col-span-8 space-y-6">
@@ -184,20 +178,19 @@
           </h1>
 
           <p class="text-stone-300 text-base sm:text-lg max-w-xl leading-relaxed font-medium">
-            Pandharpur's cult-favorite momo lab and artisan hangout. Piping-hot Himalayan dumplings, spicy fiery chutney, cheesy stone-baked pizzas, and chilled thick coffee.
+            Pandharpur's cult-favorite momo lab and artisan hangout. Piping-hot Himalayan dumplings, fiery red garlic chutney, cheesy stone-baked pizzas, and chilled thick coffee.
           </p>
 
           <div class="flex flex-wrap gap-4 pt-4">
             <a href="#menu" class="px-8 py-4 rounded-xl bg-neonYellow hover:bg-neonYellowHover text-black font-black uppercase text-xs tracking-widest transition-all flex items-center gap-2.5 shadow-xl shadow-neonYellow/20">
               <i class="fa-solid fa-fire text-chiliRed"></i> Order From Menu
             </a>
-            <a href="#reservation" class="px-8 py-4 rounded-xl bg-surfaceCard border border-white/20 hover:border-neonYellow text-white font-bold uppercase text-xs tracking-widest transition-all flex items-center gap-2.5">
-              <i class="fa-solid fa-cake-candles text-neonYellow"></i> Book Birthday Lounge
+            <a href="https://wa.me/919960502985?text=Hi%20D%20Cafe,%20I%20want%20to%20reserve%20a%20table%20or%20place%20an%20order" target="_blank" class="px-8 py-4 rounded-xl bg-surfaceCard border border-white/20 hover:border-neonYellow text-white font-bold uppercase text-xs tracking-widest transition-all flex items-center gap-2.5">
+              <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp +91 99605 02985
             </a>
           </div>
         </div>
 
-        <!-- Hero Bento Interactive Visual -->
         <div class="lg:col-span-4">
           <div class="relative rounded-3xl overflow-hidden bg-surfaceDark border-2 border-borderYellow p-3 shadow-2xl">
             <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80" alt="D Cafe Signature Momos" class="rounded-2xl object-cover h-[380px] w-full brightness-90 hover:scale-105 transition-transform duration-700">
@@ -222,7 +215,7 @@
     </div>
   </section>
 
-  <!-- BENTO GRID SHOWCASE (HIGH-END MODERN SECTION) -->
+  <!-- BENTO GRID SHOWCASE -->
   <section id="bento" class="py-20 px-4 bg-surfaceDark border-b border-white/10">
     <div class="max-w-7xl mx-auto space-y-10">
       
@@ -234,10 +227,8 @@
         <p class="text-stone-400 text-xs sm:text-sm max-w-md">No pre-packaged frozen food. Everything is prepared fresh in our live kitchen with signature spices and fresh dough.</p>
       </div>
 
-      <!-- Bento Blocks -->
       <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
         
-        <!-- Block 1: Handcrafted Momos -->
         <div class="md:col-span-2 bg-surfaceCard p-8 rounded-3xl border border-borderYellow relative overflow-hidden flex flex-col justify-between group">
           <div class="space-y-4 relative z-10">
             <span class="w-12 h-12 rounded-2xl bg-chiliRed/20 text-chiliRed border border-chiliRed/40 flex items-center justify-center text-xl font-bold">
@@ -253,7 +244,6 @@
           </div>
         </div>
 
-        <!-- Block 2: Birthday Lounge -->
         <div class="bg-surfaceCard p-8 rounded-3xl border border-white/10 flex flex-col justify-between space-y-6 group hover:border-neonYellow transition-colors">
           <div class="space-y-3">
             <span class="w-12 h-12 rounded-2xl bg-neonYellow/20 text-neonYellow border border-borderYellow flex items-center justify-center text-xl font-bold">
@@ -269,7 +259,6 @@
           </a>
         </div>
 
-        <!-- Block 3: Cold Brews & Shakes -->
         <div class="bg-surfaceCard p-8 rounded-3xl border border-white/10 flex flex-col justify-between space-y-6 group hover:border-chiliRed transition-colors">
           <div class="space-y-3">
             <span class="w-12 h-12 rounded-2xl bg-chiliRed/20 text-chiliRed border border-chiliRed/30 flex items-center justify-center text-xl font-bold">
@@ -296,10 +285,10 @@
       <div class="text-center space-y-3 max-w-2xl mx-auto">
         <span class="text-xs font-black uppercase tracking-[0.3em] text-neonYellow">Order Fresh & Hot</span>
         <h2 class="text-3xl sm:text-5xl font-black font-display uppercase">Street & Bistro Menu</h2>
-        <p class="text-stone-400 text-xs sm:text-sm">Select items directly, adjust quantities, and instantly dispatch your itemized order straight to the D Cafe counter via WhatsApp.</p>
+        <p class="text-stone-400 text-xs sm:text-sm">Select items directly, adjust quantities, and instantly dispatch your itemized order straight to D Cafe WhatsApp (+91 99605 02985).</p>
       </div>
 
-      <!-- Controls: Category Chips & Search -->
+      <!-- Controls -->
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-4">
         <div class="flex flex-wrap items-center justify-center gap-2" id="categoryChips">
           <button onclick="filterCategory('all')" class="cat-btn px-4 py-2 rounded-xl text-xs font-black transition-all bg-neonYellow text-black" data-cat="all">All Items</button>
@@ -323,7 +312,7 @@
 
       <!-- Food Menu Grid -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="menuCardsGrid">
-        <!-- Javascript renders menu cards here -->
+        <!-- Rendered by JS -->
       </div>
 
       <!-- Fallback -->
@@ -334,7 +323,7 @@
     </div>
   </section>
 
-  <!-- CELEBRATION LOUNGE BOOKING (CLEAN SLEEK FORM) -->
+  <!-- CELEBRATION LOUNGE BOOKING FORM -->
   <section id="reservation" class="py-24 px-4 bg-surfaceDark border-b border-white/10 relative">
     <div class="max-w-5xl mx-auto rounded-3xl bg-surfaceCard p-8 sm:p-14 border border-borderYellow">
       <div class="grid lg:grid-cols-12 gap-10 items-center">
@@ -348,12 +337,11 @@
           
           <ul class="space-y-3 text-xs sm:text-sm text-stone-300">
             <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-neonYellow"></i> Dedicated birthday party corner</li>
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-neonYellow"></i> Pre-ordered warm dishes & custom cakes</li>
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-neonYellow"></i> Direct booking dispatched to: +91 99605 02985</li>
             <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-neonYellow"></i> WhatsApp instant seat confirmation</li>
           </ul>
         </div>
 
-        <!-- Form -->
         <div class="lg:col-span-7 bg-obsidian p-6 sm:p-8 rounded-2xl border border-white/10">
           <form onsubmit="handleBoothBooking(event)" class="space-y-4">
             <div class="grid sm:grid-cols-2 gap-4">
@@ -409,7 +397,7 @@
             </div>
 
             <button type="submit" class="w-full py-4 rounded-xl bg-neonYellow hover:bg-neonYellowHover text-black font-black uppercase text-xs tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-neonYellow/20 mt-2">
-              <i class="fa-brands fa-whatsapp text-base"></i> Confirm Reservation Via WhatsApp
+              <i class="fa-brands fa-whatsapp text-base"></i> Confirm Reservation Via WhatsApp (+91 99605 02985)
             </button>
           </form>
         </div>
@@ -418,86 +406,7 @@
     </div>
   </section>
 
-  <!-- VERIFIED REVIEWS -->
-  <section id="reviews" class="py-24 px-4 bg-obsidian border-b border-white/10">
-    <div class="max-w-7xl mx-auto space-y-12">
-      <div class="text-center space-y-3">
-        <span class="text-xs font-black uppercase tracking-[0.3em] text-neonYellow">4.5★ Google Rating</span>
-        <h2 class="text-3xl sm:text-5xl font-black font-display uppercase">What Patrons Say</h2>
-        <p class="text-stone-400 text-xs sm:text-sm">Real reviews from regular visitors and momo lovers in Pandharpur.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-surfaceCard p-7 rounded-3xl border border-white/10 space-y-4 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-neonYellow/20 text-neonYellow flex items-center justify-center font-bold text-sm font-display">R</div>
-                <div>
-                  <h4 class="font-bold text-sm text-white">Rohit Deshmukh</h4>
-                  <p class="text-[10px] text-stone-400 uppercase tracking-wider">Local Guide • Pandharpur</p>
-                </div>
-              </div>
-              <i class="fa-brands fa-google text-stone-600 text-lg"></i>
-            </div>
-            <div class="text-neonYellow text-xs flex gap-1">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
-              "Best momos in town! Their spicy red chutney and peri-peri fried momos are unbelievable. Awesome lighting and vibe for college students in Gokul Nagar."
-            </p>
-          </div>
-          <p class="text-[11px] text-stone-500 font-medium">Verified Dine-in • Evening</p>
-        </div>
-
-        <div class="bg-surfaceCard p-7 rounded-3xl border border-white/10 space-y-4 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-chiliRed/20 text-chiliRed flex items-center justify-center font-bold text-sm font-display">P</div>
-                <div>
-                  <h4 class="font-bold text-sm text-white">Pooja Kulkarni</h4>
-                  <p class="text-[10px] text-stone-400 uppercase tracking-wider">Celebration Host</p>
-                </div>
-              </div>
-              <i class="fa-brands fa-google text-stone-600 text-lg"></i>
-            </div>
-            <div class="text-neonYellow text-xs flex gap-1">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
-              "We arranged a birthday treat at D Cafe. The staff was super helpful, music was great, and pizza was served piping hot. 10/10 recommendation!"
-            </p>
-          </div>
-          <p class="text-[11px] text-stone-500 font-medium">Birthday Reservation</p>
-        </div>
-
-        <div class="bg-surfaceCard p-7 rounded-3xl border border-white/10 space-y-4 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-neonYellow/20 text-neonYellow flex items-center justify-center font-bold text-sm font-display">A</div>
-                <div>
-                  <h4 class="font-bold text-sm text-white">Aditya Jadhav</h4>
-                  <p class="text-[10px] text-stone-400 uppercase tracking-wider">Student Patron</p>
-                </div>
-              </div>
-              <i class="fa-brands fa-google text-stone-600 text-lg"></i>
-            </div>
-            <div class="text-neonYellow text-xs flex gap-1">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
-              "Great hangout point near Gokul Nagar, Isbavi. Polite staff, quick service, and thick cold coffee is thick and flavorful. Definitely my favorite adda."
-            </p>
-          </div>
-          <p class="text-[11px] text-stone-500 font-medium">Verified Visit</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STORE LOCATION & MAP -->
+  <!-- STORE LOCATION & CONTACT -->
   <section id="location" class="py-24 px-4 bg-surfaceDark">
     <div class="max-w-7xl mx-auto space-y-12">
       <div class="text-center space-y-3">
@@ -522,6 +431,17 @@
             </div>
 
             <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-neonYellow/15 text-neonYellow flex items-center justify-center text-base shrink-0 mt-1 border border-borderYellow">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-black text-white mb-1 uppercase tracking-wider">Official Hotline & WhatsApp</h4>
+                <a href="tel:+919960502985" class="text-neonYellow font-black text-base hover:underline block">+91 99605 02985</a>
+                <p class="text-stone-400 text-xs mt-0.5">Call or WhatsApp for direct orders & inquiries.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-2xl bg-chiliRed/15 text-chiliRed flex items-center justify-center text-base shrink-0 mt-1 border border-borderRed">
                 <i class="fa-solid fa-clock"></i>
               </div>
@@ -531,21 +451,16 @@
                 <p class="text-neonYellow text-xs mt-0.5 font-bold">Kitchen Operational All 7 Days</p>
               </div>
             </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-2xl bg-neonYellow/15 text-neonYellow flex items-center justify-center text-base shrink-0 mt-1 border border-borderYellow">
-                <i class="fa-brands fa-whatsapp"></i>
-              </div>
-              <div>
-                <h4 class="text-sm font-black text-white mb-1 uppercase tracking-wider">Hotline & WhatsApp</h4>
-                <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">Direct WhatsApp ordering, advance booking & takeaways.</p>
-              </div>
-            </div>
           </div>
 
-          <a href="https://maps.google.com/?q=The+Cafe+Pandharpur" target="_blank" class="w-full py-4 rounded-xl bg-neonYellow hover:bg-neonYellowHover text-black font-black text-xs uppercase tracking-wider text-center flex items-center justify-center gap-2 shadow-lg shadow-neonYellow/20 transition-all">
-            <i class="fa-solid fa-diamond-turn-right"></i> Open Navigation In Google Maps
-          </a>
+          <div class="space-y-3">
+            <a href="https://wa.me/919960502985?text=Hi%20D%20Cafe,%20I%20want%20to%20place%20an%20order" target="_blank" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs uppercase tracking-wider text-center flex items-center justify-center gap-2 shadow-lg transition-all">
+              <i class="fa-brands fa-whatsapp text-base"></i> Chat On WhatsApp (+91 99605 02985)
+            </a>
+            <a href="https://maps.google.com/?q=The+Cafe+Pandharpur" target="_blank" class="w-full py-3.5 rounded-xl bg-neonYellow hover:bg-neonYellowHover text-black font-black text-xs uppercase tracking-wider text-center flex items-center justify-center gap-2 shadow-lg shadow-neonYellow/20 transition-all">
+              <i class="fa-solid fa-diamond-turn-right"></i> Open In Google Maps
+            </a>
+          </div>
         </div>
 
         <div class="lg:col-span-7 rounded-3xl overflow-hidden bg-surfaceCard p-2 border border-white/10 min-h-[420px]">
@@ -571,12 +486,14 @@
       </div>
       <p class="text-center">© 2026 D Cafe. Pandharpur. All Rights Reserved. Steamed with passion.</p>
       <div class="flex items-center gap-4 text-stone-400 text-base">
+        <a href="https://wa.me/919960502985" target="_blank" class="hover:text-neonYellow transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="tel:+919960502985" class="hover:text-neonYellow transition-colors"><i class="fa-solid fa-phone"></i></a>
         <a href="https://maps.google.com/?q=The+Cafe+Pandharpur" target="_blank" class="hover:text-neonYellow transition-colors"><i class="fa-solid fa-map-location-dot"></i></a>
       </div>
     </div>
   </footer>
 
-  <!-- MOBILE BOTTOM STICKY CART BAR (INCREDIBLE CONVERSIONS) -->
+  <!-- MOBILE BOTTOM STICKY CART BAR -->
   <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 p-3 bg-obsidian/95 backdrop-blur-xl border-t border-borderYellow flex items-center justify-between gap-3">
     <div>
       <span class="text-[10px] text-stone-400 uppercase font-bold block">Your Basket</span>
@@ -606,7 +523,6 @@
           </button>
         </div>
 
-        <!-- Dine-in vs Takeaway Toggle -->
         <div class="grid grid-cols-2 gap-2 mt-4 p-1 bg-obsidian rounded-xl border border-white/10 text-xs font-bold text-center">
           <button type="button" onclick="selectOrderType('Dine-In Table Order')" id="typeDineIn" class="py-2 rounded-lg bg-neonYellow text-black transition-all">Dine-In</button>
           <button type="button" onclick="selectOrderType('Takeaway / Pickup')" id="typeTakeaway" class="py-2 rounded-lg text-stone-400 hover:text-white transition-all">Takeaway</button>
@@ -627,18 +543,20 @@
           <span class="text-stone-400">Total Bill Amount</span>
           <span id="cartSubtotal" class="text-neonYellow text-xl font-display font-black">₹0</span>
         </div>
-        <p class="text-[10px] text-stone-500 text-center">Sends an itemized digital order ticket directly to D Cafe's counter on WhatsApp.</p>
+        <p class="text-[10px] text-stone-500 text-center">Dispatches an itemized digital order ticket directly to D Cafe's WhatsApp (+91 99605 02985).</p>
         
         <button onclick="checkoutToWhatsApp()" class="w-full py-4 rounded-xl bg-neonYellow hover:bg-neonYellowHover text-black font-black uppercase text-xs tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-neonYellow/20 transition-all">
-          <i class="fa-brands fa-whatsapp text-lg"></i> Send Order Via WhatsApp
+          <i class="fa-brands fa-whatsapp text-lg"></i> Send Order on WhatsApp
         </button>
       </div>
 
     </div>
   </div>
 
-  <!-- JAVASCRIPT LOGIC & ENGINE -->
+  <!-- JAVASCRIPT LOGIC & ENGINE WITH EXACT D CAFE PHONE NUMBER -->
   <script>
+    const D_CAFE_PHONE = "919960502985";
+
     const menuCatalog = [
       {
         id: 401,
@@ -754,7 +672,6 @@
               </div>
             </div>
             
-            <!-- Dynamic Inline Quantity Selector -->
             <div class="p-5 pt-0">
               ${qty > 0 ? `
                 <div class="w-full py-2.5 rounded-xl bg-obsidian border border-borderYellow flex items-center justify-between px-4">
@@ -850,7 +767,6 @@
         `).join('');
       }
 
-      // Re-render menu to update inline quantity numbers
       renderMenuGrid();
     }
 
@@ -904,7 +820,7 @@
       text += `────────────────────────────\n`;
       text += `Please reply with preparation time. Thank you!`;
 
-      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+      window.open(`https://wa.me/${D_CAFE_PHONE}?text=${encodeURIComponent(text)}`, '_blank');
     }
 
     function handleBoothBooking(e) {
@@ -929,7 +845,7 @@
       msg += `────────────────────────────\n`;
       msg += `Please confirm booth availability at D Cafe. Pandharpur.`;
 
-      window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
+      window.open(`https://wa.me/${D_CAFE_PHONE}?text=${encodeURIComponent(msg)}`, '_blank');
     }
 
     window.addEventListener('DOMContentLoaded', () => {
