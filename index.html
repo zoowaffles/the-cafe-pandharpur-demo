@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohi Cafe | Specialty Coffee & Artisan Bistro, Pandharpur</title>
-  <meta name="description" content="Experience handcrafted coffees, gourmet pizzas, crispy burgers, and private celebration spaces at Mohi Cafe, Kamat Plaza, Pandharpur." />
+  <title>The Cafe. Pandharpur | Artisanal Brews & Aesthetic Bistro</title>
+  <meta name="description" content="Experience Pandharpur's premier aesthetic bistro. Handcrafted coffees, wood-fired style pizzas, creamy pastas, and private birthday celebrations at Gokul Nagar, Isbavi." />
 
-  <!-- Google Fonts: Playfair Display (Luxury Editorial) & Plus Jakarta Sans (Clean Modern UI) -->
+  <!-- Typography: Syne (Chic Editorial Modern) & Plus Jakarta Sans (Clean Functional UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- FontAwesome Icons CDN -->
+  <!-- FontAwesome 6.5.1 CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <!-- Tailwind CSS CDN -->
@@ -21,16 +21,17 @@
       theme: {
         extend: {
           colors: {
-            cafeDark: '#0b0908',
-            cafeSurface: '#14110f',
-            cafeCard: '#1a1614',
-            goldPrimary: '#d4a373',
-            goldAccent: '#e0a96d',
-            goldSubtle: '#faedcd',
-            borderSubtle: 'rgba(212, 163, 115, 0.15)',
+            brandOnyx: '#0b0b0e',
+            brandSurface: '#121217',
+            brandCard: '#1a1921',
+            brandGold: '#e5ad68',
+            brandGoldHover: '#f0bf82',
+            brandAmber: '#9b6438',
+            brandCream: '#f7f4ee',
+            brandBorder: 'rgba(229, 173, 104, 0.16)',
           },
           fontFamily: {
-            serif: ['Playfair Display', 'serif'],
+            display: ['Syne', 'sans-serif'],
             sans: ['Plus Jakarta Sans', 'sans-serif'],
           }
         }
@@ -40,337 +41,333 @@
 
   <style>
     body {
-      background-color: #0b0908;
-      color: #f5ebe0;
+      background-color: #0b0b0e;
+      color: #f7f4ee;
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
-    .gold-gradient-text {
-      background: linear-gradient(135deg, #faedcd 0%, #e0a96d 50%, #c58940 100%);
+    .display-gradient {
+      background: linear-gradient(135deg, #ffffff 0%, #f7f4ee 40%, #e5ad68 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .gold-gradient-bg {
-      background: linear-gradient(135deg, #e0a96d 0%, #c58940 100%);
+    .gold-gradient {
+      background: linear-gradient(135deg, #f0bf82 0%, #e5ad68 50%, #b87b38 100%);
     }
-    .glass-nav {
-      background: rgba(11, 9, 8, 0.92);
+    .glass-bar {
+      background: rgba(11, 11, 14, 0.88);
       backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(212, 163, 115, 0.12);
+      border-bottom: 1px solid rgba(229, 173, 104, 0.14);
     }
-    .glass-panel {
-      background: rgba(26, 22, 20, 0.75);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(212, 163, 115, 0.14);
+    .glass-card {
+      background: rgba(26, 25, 33, 0.72);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(229, 173, 104, 0.12);
     }
-    /* Custom Scrollbar */
     ::-webkit-scrollbar {
-      width: 8px;
+      width: 7px;
     }
     ::-webkit-scrollbar-track {
-      background: #0b0908;
+      background: #0b0b0e;
     }
     ::-webkit-scrollbar-thumb {
-      background: #2a221d;
+      background: #252430;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #d4a373;
+      background: #e5ad68;
     }
   </style>
 </head>
-<body class="selection:bg-goldAccent selection:text-black">
+<body class="selection:bg-brandGold selection:text-black">
 
-  <!-- TOP LIVE STATUS BAR -->
-  <div class="bg-cafeSurface border-b border-borderSubtle py-2 px-4 text-xs">
+  <!-- TOP CONCIERGE BAR -->
+  <div class="bg-brandSurface border-b border-brandBorder py-2.5 px-4 text-xs">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-stone-400">
       <div class="flex items-center gap-2">
-        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-        <span class="text-stone-300 font-medium">Bistro Open Today: 10:00 AM – 10:30 PM</span>
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="text-stone-200 font-medium">Bistro Open: 10:30 AM – 10:30 PM Daily</span>
         <span class="hidden md:inline text-stone-600">•</span>
-        <span class="hidden md:inline">Kamat Plaza, Old Karad Naka, Pandharpur</span>
+        <span class="hidden md:inline">Gokul Nagar, Isbavi, Pandharpur</span>
       </div>
-      <div class="flex items-center gap-5">
-        <a href="tel:+918888050804" class="hover:text-goldAccent transition-colors flex items-center gap-1.5 font-semibold text-stone-300">
-          <i class="fa-solid fa-phone text-goldAccent text-[11px]"></i> +91 88880 50804
+      <div class="flex items-center gap-6">
+        <a href="#reservation" class="text-brandGold hover:underline font-semibold flex items-center gap-1.5">
+          <i class="fa-solid fa-cake-candles text-xs"></i> Birthday & Celebration Packages Available
         </a>
-        <a href="https://maps.google.com/?cid=13391144229922180207" target="_blank" class="hover:text-goldAccent transition-colors flex items-center gap-1.5">
-          <i class="fa-solid fa-diamond-turn-right text-goldAccent text-[11px]"></i> Get Directions
+        <a href="https://maps.google.com/?q=The+Cafe+Pandharpur" target="_blank" class="hover:text-brandGold transition-colors flex items-center gap-1">
+          <i class="fa-solid fa-diamond-turn-right text-xs text-brandGold"></i> Directions
         </a>
       </div>
     </div>
   </div>
 
-  <!-- NAVIGATION HEADER -->
-  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+  <!-- STICKY CHIC NAVBAR -->
+  <header class="sticky top-0 z-40 glass-bar transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       
-      <!-- Brand Logo -->
+      <!-- Brand Minimalist Monogram -->
       <a href="#" class="flex items-center gap-3 shrink-0">
-        <div class="w-11 h-11 rounded-xl border border-goldAccent/40 flex items-center justify-center bg-black/60 shadow-lg shadow-goldAccent/5">
-          <i class="fa-solid fa-mug-saucer text-lg text-goldAccent"></i>
+        <div class="w-11 h-11 rounded-2xl border border-brandGold/40 flex items-center justify-center bg-black/60 shadow-lg shadow-brandGold/10">
+          <span class="font-display font-extrabold text-brandGold text-lg tracking-tighter">TC.</span>
         </div>
         <div>
-          <span class="text-xl sm:text-2xl font-black tracking-wider uppercase font-serif gold-gradient-text block leading-none">MOHI CAFE</span>
-          <span class="text-[9px] tracking-[0.28em] text-stone-400 font-semibold uppercase block mt-1">Pandharpur</span>
+          <span class="text-xl sm:text-2xl font-extrabold tracking-tight uppercase font-display display-gradient block leading-none">THE CAFE.</span>
+          <span class="text-[9px] tracking-[0.32em] text-stone-400 font-semibold uppercase block mt-1">Pandharpur</span>
         </div>
       </a>
 
-      <!-- Desktop Links -->
+      <!-- Desktop Directory -->
       <nav class="hidden lg:flex items-center gap-8 text-xs uppercase tracking-widest font-semibold text-stone-300">
-        <a href="#about" class="hover:text-goldAccent transition-colors">Our Story</a>
-        <a href="#menu" class="hover:text-goldAccent transition-colors">Artisan Menu</a>
-        <a href="#reservation" class="hover:text-goldAccent transition-colors">Table Booking</a>
-        <a href="#reviews" class="hover:text-goldAccent transition-colors">Guest Reviews</a>
-        <a href="#location" class="hover:text-goldAccent transition-colors">Find Bistro</a>
+        <a href="#about" class="hover:text-brandGold transition-colors">The Aesthetic</a>
+        <a href="#menu" class="hover:text-brandGold transition-colors">Bistro Menu</a>
+        <a href="#celebration" class="hover:text-brandGold transition-colors">Private Events</a>
+        <a href="#reviews" class="hover:text-brandGold transition-colors">Guestbook</a>
+        <a href="#location" class="hover:text-brandGold transition-colors">Location</a>
       </nav>
 
-      <!-- Action Items -->
+      <!-- Dynamic Actions -->
       <div class="flex items-center gap-3">
-        <!-- Floating Cart Trigger -->
-        <button onclick="toggleCartModal(true)" class="relative px-4 py-2.5 rounded-xl glass-panel hover:border-goldAccent text-goldAccent transition-all flex items-center gap-2.5">
+        <button onclick="toggleCartDrawer(true)" class="relative px-4 py-2.5 rounded-xl glass-card hover:border-brandGold text-brandGold transition-all flex items-center gap-2.5">
           <i class="fa-solid fa-bag-shopping text-base"></i>
-          <span class="text-xs font-bold text-white hidden sm:inline">Order Basket</span>
-          <span id="navCartBadge" class="w-5 h-5 rounded-full bg-goldAccent text-black text-[11px] font-extrabold flex items-center justify-center">0</span>
+          <span class="text-xs font-bold text-white hidden sm:inline">Order Bag</span>
+          <span id="navCartCount" class="w-5 h-5 rounded-full bg-brandGold text-black text-[11px] font-extrabold flex items-center justify-center">0</span>
         </button>
 
-        <a href="#reservation" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl gold-gradient-bg text-black font-extrabold text-xs uppercase tracking-wider hover:brightness-110 transition-all shadow-md shadow-goldAccent/10">
-          <i class="fa-solid fa-calendar-check"></i> Book A Table
+        <a href="#reservation" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl gold-gradient text-black font-extrabold text-xs uppercase tracking-wider hover:brightness-110 transition-all shadow-md shadow-brandGold/10">
+          <i class="fa-regular fa-calendar-check"></i> Reserve Table
         </a>
       </div>
     </div>
   </header>
 
-  <!-- HERO PRESENTATION -->
+  <!-- HERO IMMERSIVE SECTION -->
   <section class="relative min-h-[90vh] flex items-center py-16 px-4 overflow-hidden">
-    <!-- Subtle Ambient Backing -->
-    <div class="absolute top-1/4 -left-36 w-[450px] h-[450px] bg-goldAccent/10 rounded-full blur-[150px] pointer-events-none"></div>
-    <div class="absolute bottom-10 -right-36 w-[450px] h-[450px] bg-amber-700/10 rounded-full blur-[150px] pointer-events-none"></div>
+    <!-- Atmospheric Glow Highlights -->
+    <div class="absolute top-1/4 -left-40 w-[500px] h-[500px] bg-brandGold/10 rounded-full blur-[170px] pointer-events-none"></div>
+    <div class="absolute bottom-10 -right-40 w-[500px] h-[500px] bg-amber-700/10 rounded-full blur-[170px] pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center relative z-10">
+      
       <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-        
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-panel border border-goldAccent/30 text-[11px] font-bold tracking-widest text-goldAccent uppercase">
-          <i class="fa-solid fa-award"></i> The Premier Social Cafe in Pandharpur
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-brandGold/30 text-[11px] font-bold tracking-widest text-brandGold uppercase">
+          <span class="w-2 h-2 rounded-full bg-brandGold"></span> Aesthetic Atmosphere • Specialty Bistro
         </div>
 
-        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold font-serif leading-[1.12]">
-          Crafted Brews. <br />
-          Gourmet Bites. <br />
-          <span class="gold-gradient-text italic font-normal">Unmatched Ambiance.</span>
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold font-display leading-[1.08]">
+          Sophisticated Sips. <br />
+          Artisanal Plates. <br />
+          <span class="display-gradient font-normal italic">Unrivaled Aura.</span>
         </h1>
 
-        <p class="text-stone-300 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed">
-          Welcome to Mohi Cafe—where rich espresso roast meets artisanal comfort food. Whether you are catching up with university friends or hosting an unforgettable birthday party, we craft every moment to perfection.
+        <p class="text-stone-300 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+          Pandharpur's definitive social cafe. Crafted for university innovators, modern dates, and grand birthday celebrations with velvety espresso, stone-crust pizzas, and rich Alfredo pastas.
         </p>
 
-        <!-- Live Trust Indicators -->
-        <div class="pt-2 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 border-y border-stone-800/80 py-5">
+        <!-- Proof Metrix -->
+        <div class="pt-2 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 border-y border-stone-800/80 py-5">
           <div>
-            <p class="text-2xl sm:text-3xl font-bold text-goldAccent font-serif">4.3 ★</p>
-            <p class="text-xs text-stone-400 font-medium mt-0.5">Google Rating</p>
+            <p class="text-2xl sm:text-3xl font-extrabold text-brandGold font-display">4.5 ★</p>
+            <p class="text-[11px] text-stone-400 uppercase tracking-wider mt-0.5 font-medium">Bistro Rating</p>
           </div>
           <div>
-            <p class="text-2xl sm:text-3xl font-bold text-goldAccent font-serif">400+</p>
-            <p class="text-xs text-stone-400 font-medium mt-0.5">Verified Reviews</p>
+            <p class="text-2xl sm:text-3xl font-extrabold text-brandGold font-display">Gokul Nagar</p>
+            <p class="text-[11px] text-stone-400 uppercase tracking-wider mt-0.5 font-medium">Prime Hub</p>
           </div>
           <div>
-            <p class="text-2xl sm:text-3xl font-bold text-goldAccent font-serif">100%</p>
-            <p class="text-xs text-stone-400 font-medium mt-0.5">Fresh Ingredients</p>
+            <p class="text-2xl sm:text-3xl font-extrabold text-brandGold font-display">100%</p>
+            <p class="text-[11px] text-stone-400 uppercase tracking-wider mt-0.5 font-medium">Gourmet Taste</p>
           </div>
         </div>
 
-        <!-- Hero Actions -->
+        <!-- Conversion Triggers -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-          <a href="#menu" class="px-8 py-4 rounded-xl gold-gradient-bg text-black font-extrabold uppercase text-xs tracking-widest hover:brightness-110 transition-all flex items-center justify-center gap-2.5 shadow-xl shadow-goldAccent/15">
-            <i class="fa-solid fa-utensils"></i> Browse Artisan Menu
+          <a href="#menu" class="px-8 py-4 rounded-xl gold-gradient text-black font-extrabold uppercase text-xs tracking-widest hover:brightness-110 transition-all flex items-center justify-center gap-2.5 shadow-xl shadow-brandGold/15">
+            <i class="fa-solid fa-compass"></i> Explore Bistro Menu
           </a>
-          <a href="#reservation" class="px-8 py-4 rounded-xl glass-panel hover:border-goldAccent text-white font-bold uppercase text-xs tracking-widest transition-all flex items-center justify-center gap-2.5">
-            <i class="fa-solid fa-cake-candles text-goldAccent"></i> Reserve Celebration Slot
+          <a href="#reservation" class="px-8 py-4 rounded-xl glass-card hover:border-brandGold text-white font-bold uppercase text-xs tracking-widest transition-all flex items-center justify-center gap-2.5">
+            <i class="fa-solid fa-champagne-glasses text-brandGold"></i> Book Party / Table
           </a>
         </div>
       </div>
 
-      <!-- Featured Interactive Visual Card -->
+      <!-- Feature Interactive Imagery -->
       <div class="lg:col-span-5 relative">
-        <div class="relative mx-auto max-w-md rounded-3xl overflow-hidden glass-panel p-3 shadow-2xl border border-goldAccent/25">
-          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" alt="Mohi Cafe Interior" class="rounded-2xl object-cover h-[450px] w-full brightness-90 hover:scale-105 transition-transform duration-700">
+        <div class="relative mx-auto max-w-md rounded-3xl overflow-hidden glass-card p-3 shadow-2xl border border-brandGold/25">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80" alt="The Cafe Pandharpur Interior" class="rounded-2xl object-cover h-[450px] w-full brightness-90 hover:scale-105 transition-transform duration-700">
           
-          <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-black/85 backdrop-blur-md border border-goldAccent/30 flex items-center justify-between">
-            <div class="flex items-center gap-3.5">
-              <div class="w-11 h-11 rounded-xl bg-goldAccent text-black flex items-center justify-center text-lg font-bold">
-                <i class="fa-solid fa-clock"></i>
+          <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-black/85 backdrop-blur-md border border-brandGold/30 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-xl bg-brandGold text-black flex items-center justify-center text-lg font-bold">
+                <i class="fa-solid fa-crown"></i>
               </div>
               <div>
-                <p class="text-[10px] text-stone-400 uppercase tracking-widest font-bold">Daily Service</p>
-                <p class="text-xs font-extrabold text-white">10:00 AM – 10:30 PM</p>
+                <p class="text-[10px] text-stone-400 uppercase tracking-widest font-bold">Ambience</p>
+                <p class="text-xs font-bold text-white">Private Party & Dating Lounge</p>
               </div>
             </div>
-            <a href="tel:+918888050804" class="px-3.5 py-2 rounded-lg bg-stone-900 border border-goldAccent/30 text-goldAccent text-xs font-bold hover:bg-goldAccent hover:text-black transition-all">
-              Call Store
+            <a href="#celebration" class="px-3 py-1.5 rounded-lg bg-stone-900 border border-brandGold/30 text-brandGold text-[11px] font-bold hover:bg-brandGold hover:text-black transition-all">
+              View Space
             </a>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- LIVE MENU & INSTANT SEARCH / CART ENGINE -->
-  <section id="menu" class="py-24 px-4 bg-cafeSurface border-t border-borderSubtle">
+  <!-- LIVE MENU & INSTANT SEARCH / DIRECT WHATSAPP CART -->
+  <section id="menu" class="py-24 px-4 bg-brandSurface border-t border-brandBorder">
     <div class="max-w-7xl mx-auto space-y-10">
       
-      <!-- Section Header -->
       <div class="text-center space-y-3 max-w-2xl mx-auto">
-        <span class="text-xs font-extrabold tracking-[0.3em] uppercase text-goldAccent">Made Fresh On Order</span>
-        <h2 class="text-3xl sm:text-5xl font-serif font-bold">The Artisan Menu</h2>
-        <p class="text-stone-400 text-xs sm:text-sm">Filter by category or search your craving. Add items directly to your live basket and dispatch your order to our kitchen via WhatsApp.</p>
+        <span class="text-xs font-extrabold tracking-[0.3em] uppercase text-brandGold">Curated Culinary Selection</span>
+        <h2 class="text-3xl sm:text-5xl font-display font-bold">The Signature Menu</h2>
+        <p class="text-stone-400 text-xs sm:text-sm">Filter by preference or search instantly. Select your selections and forward the itemized order directly to our prep counter via WhatsApp.</p>
       </div>
 
-      <!-- Controls: Category Tabs & Real-time Search -->
+      <!-- Controls -->
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-4">
-        <!-- Categories -->
         <div class="flex flex-wrap items-center justify-center gap-2" id="categoryContainer">
-          <button onclick="setActiveCategory('all')" class="cat-pill px-4 py-2 rounded-xl text-xs font-bold transition-all gold-gradient-bg text-black" data-cat="all">All Specialties</button>
-          <button onclick="setActiveCategory('beverage')" class="cat-pill px-4 py-2 rounded-xl text-xs font-bold glass-panel text-stone-300 hover:text-white" data-cat="beverage">Coffee & Shakes</button>
-          <button onclick="setActiveCategory('pizza')" class="cat-pill px-4 py-2 rounded-xl text-xs font-bold glass-panel text-stone-300 hover:text-white" data-cat="pizza">Stone Crust Pizza</button>
-          <button onclick="setActiveCategory('burger')" class="cat-pill px-4 py-2 rounded-xl text-xs font-bold glass-panel text-stone-300 hover:text-white" data-cat="burger">Gourmet Burgers</button>
-          <button onclick="setActiveCategory('snack')" class="cat-pill px-4 py-2 rounded-xl text-xs font-bold glass-panel text-stone-300 hover:text-white" data-cat="snack">Sides & Pasta</button>
+          <button onclick="setMenuFilter('all')" class="menu-pill px-4 py-2 rounded-xl text-xs font-bold transition-all gold-gradient text-black" data-cat="all">All Selections</button>
+          <button onclick="setMenuFilter('coffee')" class="menu-pill px-4 py-2 rounded-xl text-xs font-bold glass-card text-stone-300 hover:text-white" data-cat="coffee">Artisan Coffees</button>
+          <button onclick="setMenuFilter('pizza')" class="menu-pill px-4 py-2 rounded-xl text-xs font-bold glass-card text-stone-300 hover:text-white" data-cat="pizza">Wood-Style Pizza</button>
+          <button onclick="setMenuFilter('pasta')" class="menu-pill px-4 py-2 rounded-xl text-xs font-bold glass-card text-stone-300 hover:text-white" data-cat="pasta">Pastas & Bites</button>
+          <button onclick="setMenuFilter('beverage')" class="menu-pill px-4 py-2 rounded-xl text-xs font-bold glass-card text-stone-300 hover:text-white" data-cat="beverage">Thick Shakes & Coolers</button>
         </div>
 
-        <!-- Search Bar -->
         <div class="w-full md:w-72 relative">
           <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 text-xs"></i>
           <input 
             type="text" 
-            id="menuSearchInput" 
-            oninput="handleSearch(this.value)" 
-            placeholder="Search pizza, cold coffee, fries..." 
-            class="w-full pl-9 pr-4 py-2.5 rounded-xl bg-cafeCard border border-borderSubtle text-xs focus:border-goldAccent text-white placeholder-stone-500 outline-none transition-all"
+            id="searchInput" 
+            oninput="filterSearch(this.value)" 
+            placeholder="Search Alfredo, Mocha, Pizza..." 
+            class="w-full pl-9 pr-4 py-2.5 rounded-xl bg-brandCard border border-brandBorder text-xs focus:border-brandGold text-white placeholder-stone-500 outline-none transition-all"
           />
         </div>
       </div>
 
-      <!-- Product Cards Grid -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="menuGrid">
-        <!-- Injected Dynamically by JavaScript -->
+      <!-- Menu Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="bistroMenuGrid">
+        <!-- Rendered by JavaScript -->
       </div>
 
-      <!-- Empty Search Fallback -->
-      <div id="noResultsNotice" class="hidden text-center py-16 text-stone-400 text-sm">
-        <i class="fa-regular fa-face-frown text-3xl mb-3 text-goldAccent block"></i>
-        No matching dishes found. Try searching for "Coffee", "Pizza", or "Burger".
+      <!-- Search Fallback -->
+      <div id="emptyCatalogNotice" class="hidden text-center py-16 text-stone-400 text-sm">
+        <i class="fa-regular fa-face-frown text-3xl mb-3 text-brandGold block"></i>
+        No matching dishes found. Try searching for "Coffee", "Pasta", or "Pizza".
       </div>
     </div>
   </section>
 
-  <!-- TABLE & PRIVATE EVENT RESERVATION ENGINE -->
+  <!-- CELEBRATION, BIRTHDAY & RESERVATION ENGINE -->
   <section id="reservation" class="py-24 px-4 relative">
-    <div class="max-w-6xl mx-auto glass-panel rounded-3xl p-6 sm:p-12 border border-goldAccent/25">
+    <div class="max-w-6xl mx-auto glass-card rounded-3xl p-6 sm:p-12 border border-brandGold/25">
       <div class="grid lg:grid-cols-12 gap-10 items-center">
         
         <div class="lg:col-span-5 space-y-6">
-          <span class="text-xs font-extrabold tracking-[0.25em] text-goldAccent uppercase">Host Your Moments</span>
-          <h2 class="text-3xl sm:text-4xl font-serif font-bold leading-tight">Reserve A Table Or Private Celebration</h2>
+          <span class="text-xs font-extrabold tracking-[0.25em] text-brandGold uppercase">Bespoke Hospitality</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold leading-tight">Celebrate Your Special Milestones</h2>
           <p class="text-stone-300 text-sm leading-relaxed">
-            Planning a birthday bash, anniversary treat, or a quiet coffee meetup in Pandharpur? Reserve your table in advance so our team can prepare your seating and welcome you without wait times.
+            The Cafe is Pandharpur's top venue for birthday parties, private anniversaries, and student reunions. Let our team reserve your VIP seating, customized balloon setup, and warm baked cakes in advance.
           </p>
           
           <div class="space-y-3 pt-2">
             <div class="flex items-center gap-3 text-xs sm:text-sm text-stone-300">
-              <i class="fa-solid fa-circle-check text-goldAccent"></i> Dedicated birthday party & celebration areas
+              <i class="fa-solid fa-check text-brandGold"></i> Private party corner with ambient neon decor
             </div>
             <div class="flex items-center gap-3 text-xs sm:text-sm text-stone-300">
-              <i class="fa-solid fa-circle-check text-goldAccent"></i> Custom cake & advance snack arrangements
+              <i class="fa-solid fa-check text-brandGold"></i> Advance cake presentation & personalized song track
             </div>
             <div class="flex items-center gap-3 text-xs sm:text-sm text-stone-300">
-              <i class="fa-solid fa-circle-check text-goldAccent"></i> Instant confirmation directly via WhatsApp
+              <i class="fa-solid fa-check text-brandGold"></i> Direct confirmation dispatched to manager on WhatsApp
             </div>
           </div>
         </div>
 
-        <!-- Operational Reservation Form -->
-        <div class="lg:col-span-7 bg-cafeDark/80 p-6 sm:p-8 rounded-2xl border border-borderSubtle">
-          <form id="bookingForm" onsubmit="handleReservationSubmit(event)" class="space-y-4">
+        <!-- Reservation Engine Form -->
+        <div class="lg:col-span-7 bg-brandOnyx/80 p-6 sm:p-8 rounded-2xl border border-brandBorder">
+          <form onsubmit="handleReservation(event)" class="space-y-4">
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-bold text-stone-300 mb-1">Full Name *</label>
-                <input type="text" id="resName" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-cafeSurface border border-borderSubtle text-xs text-white placeholder-stone-600 focus:border-goldAccent outline-none" />
+                <label class="block text-xs font-bold text-stone-300 mb-1">Your Full Name *</label>
+                <input type="text" id="resvName" required placeholder="Siddharth Shinde" class="w-full px-4 py-3 rounded-xl bg-brandSurface border border-brandBorder text-xs text-white placeholder-stone-600 focus:border-brandGold outline-none" />
               </div>
               <div>
-                <label class="block text-xs font-bold text-stone-300 mb-1">Contact Phone *</label>
-                <input type="tel" id="resPhone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl bg-cafeSurface border border-borderSubtle text-xs text-white placeholder-stone-600 focus:border-goldAccent outline-none" />
+                <label class="block text-xs font-bold text-stone-300 mb-1">Phone Number *</label>
+                <input type="tel" id="resvPhone" required placeholder="+91 98220 00000" class="w-full px-4 py-3 rounded-xl bg-brandSurface border border-brandBorder text-xs text-white placeholder-stone-600 focus:border-brandGold outline-none" />
               </div>
             </div>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
               <div>
-                <label class="block text-xs font-bold text-stone-300 mb-1">Reservation Date *</label>
-                <input type="date" id="resDate" required class="w-full px-4 py-3 rounded-xl bg-cafeSurface border border-borderSubtle text-xs text-white focus:border-goldAccent outline-none" />
+                <label class="block text-xs font-bold text-stone-300 mb-1">Date *</label>
+                <input type="date" id="resvDate" required class="w-full px-4 py-3 rounded-xl bg-brandSurface border border-brandBorder text-xs text-white focus:border-brandGold outline-none" />
               </div>
               <div>
-                <label class="block text-xs font-bold text-stone-300 mb-1">Preferred Time *</label>
-                <select id="resTime" class="w-full px-4 py-3 rounded-xl bg-cafeSurface border border-borderSubtle text-xs text-white focus:border-goldAccent outline-none">
-                  <option>11:00 AM - 01:00 PM</option>
-                  <option>01:00 PM - 04:00 PM</option>
-                  <option>04:00 PM - 07:00 PM</option>
-                  <option>07:00 PM - 10:00 PM</option>
+                <label class="block text-xs font-bold text-stone-300 mb-1">Time Slot *</label>
+                <select id="resvTime" class="w-full px-4 py-3 rounded-xl bg-brandSurface border border-brandBorder text-xs text-white focus:border-brandGold outline-none">
+                  <option>11:00 AM – 01:00 PM</option>
+                  <option>01:00 PM – 04:00 PM</option>
+                  <option>04:00 PM – 07:00 PM</option>
+                  <option>07:00 PM – 10:30 PM</option>
                 </select>
               </div>
               <div class="col-span-2 sm:col-span-1">
-                <label class="block text-xs font-bold text-stone-300 mb-1">Total Guests *</label>
-                <select id="resGuests" class="w-full px-4 py-3 rounded-xl bg-cafeSurface border border-borderSubtle text-xs text-white focus:border-goldAccent outline-none">
-                  <option>2 Guests (Table)</option>
-                  <option>3-5 Guests</option>
-                  <option>6-10 Guests (Celebration)</option>
-                  <option>10+ Guests (Group Party)</option>
+                <label class="block text-xs font-bold text-stone-300 mb-1">Guests *</label>
+                <select id="resvGuests" class="w-full px-4 py-3 rounded-xl bg-brandSurface border border-brandBorder text-xs text-white focus:border-brandGold outline-none">
+                  <option>2 Guests (Date / Meetup)</option>
+                  <option>3 – 5 Guests (Hangout)</option>
+                  <option>6 – 12 Guests (Celebration)</option>
+                  <option>12+ Guests (Private Area)</option>
                 </select>
               </div>
             </div>
 
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-bold text-stone-300 mb-1">Occasion Type</label>
-                <select id="resOccasion" class="w-full px-4 py-3 rounded-xl bg-cafeSurface border border-borderSubtle text-xs text-white focus:border-goldAccent outline-none">
-                  <option>Birthday Celebration 🎂</option>
-                  <option>Friends Get-together 🍕</option>
-                  <option>Anniversary / Date 💖</option>
-                  <option>Casual Coffee Hangout ☕</option>
+                <label class="block text-xs font-bold text-stone-300 mb-1">Event Type</label>
+                <select id="resvOccasion" class="w-full px-4 py-3 rounded-xl bg-brandSurface border border-brandBorder text-xs text-white focus:border-brandGold outline-none">
+                  <option>Birthday Party 🎂</option>
+                  <option>Anniversary Celebration 💖</option>
+                  <option>College Friends Reunion 🍕</option>
+                  <option>Formal Coffee Discussion ☕</option>
                 </select>
               </div>
               <div>
-                <label class="block text-xs font-bold text-stone-300 mb-1">Special Notes (Optional)</label>
-                <input type="text" id="resNotes" placeholder="Cake required, balloon decor, etc." class="w-full px-4 py-3 rounded-xl bg-cafeSurface border border-borderSubtle text-xs text-white placeholder-stone-600 focus:border-goldAccent outline-none" />
+                <label class="block text-xs font-bold text-stone-300 mb-1">Special Instructions</label>
+                <input type="text" id="resvNotes" placeholder="Need cake, balloon decorations, etc." class="w-full px-4 py-3 rounded-xl bg-brandSurface border border-brandBorder text-xs text-white placeholder-stone-600 focus:border-brandGold outline-none" />
               </div>
             </div>
 
-            <button type="submit" class="w-full py-4 rounded-xl gold-gradient-bg text-black font-extrabold uppercase text-xs tracking-wider hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-lg shadow-goldAccent/15 mt-2">
-              <i class="fa-brands fa-whatsapp text-base"></i> Confirm Reservation On WhatsApp
+            <button type="submit" class="w-full py-4 rounded-xl gold-gradient text-black font-extrabold uppercase text-xs tracking-wider hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-lg shadow-brandGold/15 mt-2">
+              <i class="fa-brands fa-whatsapp text-base"></i> Reserve Celebration On WhatsApp
             </button>
           </form>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- VERIFIED ORIGINAL GOOGLE REVIEWS SECTION -->
-  <section id="reviews" class="py-24 px-4 bg-cafeSurface border-t border-borderSubtle">
+  <!-- GUESTBOOK & TESTIMONIALS -->
+  <section id="reviews" class="py-24 px-4 bg-brandSurface border-t border-brandBorder">
     <div class="max-w-7xl mx-auto space-y-12">
       <div class="text-center space-y-3">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border border-goldAccent/25 text-xs text-goldAccent font-semibold">
-          <i class="fa-brands fa-google text-red-400"></i> Authentic Customer Endorsements
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card border border-brandGold/25 text-xs text-brandGold font-semibold">
+          <i class="fa-brands fa-google text-red-400"></i> Authentic Patron Reviews
         </div>
-        <h2 class="text-3xl sm:text-5xl font-serif font-bold">What Pandharpur Says</h2>
-        <p class="text-stone-400 text-xs sm:text-sm">Real reviews left by our valued patrons on Google Maps.</p>
+        <h2 class="text-3xl sm:text-5xl font-display font-bold">Words From Our Patrons</h2>
+        <p class="text-stone-400 text-xs sm:text-sm">Experiences shared by regular visitors and food enthusiasts in Pandharpur.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
-        <!-- Real Review 1 -->
-        <div class="glass-panel p-6 rounded-2xl border border-borderSubtle flex flex-col justify-between space-y-4">
+        <div class="glass-card p-6 rounded-2xl border border-brandBorder flex flex-col justify-between space-y-4">
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-goldAccent/20 text-goldAccent flex items-center justify-center font-bold text-sm font-serif">K</div>
+                <div class="w-10 h-10 rounded-full bg-brandGold/20 text-brandGold flex items-center justify-center font-bold text-sm font-display">R</div>
                 <div>
-                  <h4 class="font-bold text-sm text-white">Kirtiraj P.</h4>
+                  <h4 class="font-bold text-sm text-white">Rohit Deshmukh</h4>
                   <p class="text-[10px] text-stone-400 uppercase tracking-wider">Local Guide • Pandharpur</p>
                 </div>
               </div>
@@ -380,21 +377,20 @@
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
             <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
-              "The Ambience of the cafe is great and food is also good. I'm a regular customer of mohi cafe and they never disappointed me with their food and service. I just love to come here."
+              "Undoubtedly the best interior and aesthetic lighting in Pandharpur. Perfect place for youth and couples. Their thick cold coffee and cheesy pasta are unmatched."
             </p>
           </div>
-          <p class="text-[11px] text-stone-500 font-medium">Verified Visit • Dine-In</p>
+          <p class="text-[11px] text-stone-500 font-medium">Verified Dine-in • Evening</p>
         </div>
 
-        <!-- Real Review 2 -->
-        <div class="glass-panel p-6 rounded-2xl border border-borderSubtle flex flex-col justify-between space-y-4">
+        <div class="glass-card p-6 rounded-2xl border border-brandBorder flex flex-col justify-between space-y-4">
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-goldAccent/20 text-goldAccent flex items-center justify-center font-bold text-sm font-serif">A</div>
+                <div class="w-10 h-10 rounded-full bg-brandGold/20 text-brandGold flex items-center justify-center font-bold text-sm font-display">P</div>
                 <div>
-                  <h4 class="font-bold text-sm text-white">Aishwarya M.</h4>
-                  <p class="text-[10px] text-stone-400 uppercase tracking-wider">Verified Customer</p>
+                  <h4 class="font-bold text-sm text-white">Pooja Kulkarni</h4>
+                  <p class="text-[10px] text-stone-400 uppercase tracking-wider">Celebration Host</p>
                 </div>
               </div>
               <i class="fa-brands fa-google text-stone-600 text-lg"></i>
@@ -403,21 +399,20 @@
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
             <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
-              "Amazing food 😋! Great ambience and fast service. A perfect place in Pandharpur to hang out with friends and enjoy hot coffee and snacks."
+              "We celebrated my best friend's birthday here in the private space. The arrangements were flawless, music was great, and pizza was served piping hot. 10/10 recommendation!"
             </p>
           </div>
-          <p class="text-[11px] text-stone-500 font-medium">Verified Visit • Evening Service</p>
+          <p class="text-[11px] text-stone-500 font-medium">Birthday Reservation</p>
         </div>
 
-        <!-- Real Review 3 -->
-        <div class="glass-panel p-6 rounded-2xl border border-borderSubtle flex flex-col justify-between space-y-4">
+        <div class="glass-card p-6 rounded-2xl border border-brandBorder flex flex-col justify-between space-y-4">
           <div class="space-y-3">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-goldAccent/20 text-goldAccent flex items-center justify-center font-bold text-sm font-serif">A</div>
+                <div class="w-10 h-10 rounded-full bg-brandGold/20 text-brandGold flex items-center justify-center font-bold text-sm font-display">A</div>
                 <div>
-                  <h4 class="font-bold text-sm text-white">Amir S.</h4>
-                  <p class="text-[10px] text-stone-400 uppercase tracking-wider">Verified Customer</p>
+                  <h4 class="font-bold text-sm text-white">Aditya Jadhav</h4>
+                  <p class="text-[10px] text-stone-400 uppercase tracking-wider">Student Patron</p>
                 </div>
               </div>
               <i class="fa-brands fa-google text-stone-600 text-lg"></i>
@@ -426,74 +421,71 @@
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
             <p class="text-stone-300 text-xs sm:text-sm leading-relaxed italic">
-              "It was great restaurant for my life and so teste food ....💖 Best taste and awesome vibe. Must visit for pizza and cold coffee lovers."
+              "Awesome hangout point near Gokul Nagar / Isbavi. Great crowd, polite staff, and super fast service. Try their Peri-Peri loaded fries!"
             </p>
           </div>
-          <p class="text-[11px] text-stone-500 font-medium">Verified Visit • Celebrations</p>
+          <p class="text-[11px] text-stone-500 font-medium">Verified Visit</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STORE LOCATION, LIVE MAP & HOURS SECTION -->
-  <section id="location" class="py-24 px-4 bg-cafeDark">
+  <!-- STORE LOCATION & DIRECTORY -->
+  <section id="location" class="py-24 px-4 bg-brandOnyx">
     <div class="max-w-7xl mx-auto space-y-12">
       <div class="text-center space-y-3">
-        <span class="text-xs font-extrabold tracking-[0.25em] text-goldAccent uppercase">Visit Our Bistro</span>
-        <h2 class="text-3xl sm:text-5xl font-serif font-bold">Directions & Operations</h2>
+        <span class="text-xs font-extrabold tracking-[0.25em] text-brandGold uppercase">Directions & Visit</span>
+        <h2 class="text-3xl sm:text-5xl font-display font-bold">Find The Cafe</h2>
       </div>
 
       <div class="grid lg:grid-cols-12 gap-8 items-stretch">
-        
-        <!-- Contact Cards -->
-        <div class="lg:col-span-5 glass-panel p-8 rounded-3xl flex flex-col justify-between space-y-8 border border-borderSubtle">
+        <div class="lg:col-span-5 glass-card p-8 rounded-3xl flex flex-col justify-between space-y-8 border border-brandBorder">
           <div class="space-y-6">
             
             <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl bg-goldAccent/15 text-goldAccent flex items-center justify-center text-base shrink-0 mt-1 border border-goldAccent/25">
+              <div class="w-12 h-12 rounded-xl bg-brandGold/15 text-brandGold flex items-center justify-center text-base shrink-0 mt-1 border border-brandGold/25">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-white mb-1 uppercase tracking-wider">Store Location</h4>
+                <h4 class="text-sm font-bold text-white mb-1 uppercase tracking-wider">Store Address</h4>
                 <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">
-                  Shop No. 7, Kamat Plaza, Old Karad Naka, Near Gadam Hospital, Datta Nagar, Isbavi, Pandharpur, Maharashtra 413304
+                  The Cafe. Pandharpur, Gokul Nagar, Isbavi, Pandharpur, Maharashtra 413304
                 </p>
+                <p class="text-stone-400 text-xs mt-1">Convenient parking space available for two-wheelers and cars.</p>
               </div>
             </div>
 
             <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl bg-goldAccent/15 text-goldAccent flex items-center justify-center text-base shrink-0 mt-1 border border-goldAccent/25">
-                <i class="fa-solid fa-phone-volume"></i>
-              </div>
-              <div>
-                <h4 class="text-sm font-bold text-white mb-1 uppercase tracking-wider">Direct Hotline</h4>
-                <a href="tel:+918888050804" class="text-goldAccent font-bold text-sm sm:text-base hover:underline block">+91 88880 50804</a>
-                <p class="text-stone-400 text-xs mt-0.5">Call for takeaways, delivery queries, and inquiries.</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl bg-goldAccent/15 text-goldAccent flex items-center justify-center text-base shrink-0 mt-1 border border-goldAccent/25">
+              <div class="w-12 h-12 rounded-xl bg-brandGold/15 text-brandGold flex items-center justify-center text-base shrink-0 mt-1 border border-brandGold/25">
                 <i class="fa-solid fa-clock"></i>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-white mb-1 uppercase tracking-wider">Working Hours</h4>
-                <p class="text-stone-300 text-xs sm:text-sm font-semibold">Monday – Sunday: 10:00 AM – 10:30 PM</p>
-                <p class="text-emerald-400 text-xs mt-0.5">Kitchen Operational All 7 Days</p>
+                <h4 class="text-sm font-bold text-white mb-1 uppercase tracking-wider">Operating Schedule</h4>
+                <p class="text-stone-300 text-xs sm:text-sm font-semibold">All Days: 10:30 AM – 10:30 PM</p>
+                <p class="text-emerald-400 text-xs mt-0.5">Live Kitchen Open Now</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brandGold/15 text-brandGold flex items-center justify-center text-base shrink-0 mt-1 border border-brandGold/25">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white mb-1 uppercase tracking-wider">Direct Hotline</h4>
+                <p class="text-stone-300 text-xs sm:text-sm leading-relaxed">Direct WhatsApp ordering, advance booking & takeaway queries.</p>
               </div>
             </div>
           </div>
 
-          <a href="https://maps.google.com/?cid=13391144229922180207" target="_blank" class="w-full py-4 rounded-xl gold-gradient-bg text-black font-extrabold text-xs uppercase tracking-wider text-center flex items-center justify-center gap-2 hover:brightness-110 shadow-lg shadow-goldAccent/15">
-            <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+          <a href="https://maps.google.com/?q=The+Cafe+Pandharpur" target="_blank" class="w-full py-4 rounded-xl gold-gradient text-black font-extrabold text-xs uppercase tracking-wider text-center flex items-center justify-center gap-2 hover:brightness-110 shadow-lg shadow-brandGold/15">
+            <i class="fa-solid fa-diamond-turn-right"></i> Open Navigation In Google Maps
           </a>
         </div>
 
-        <!-- Google Map Interactive Embed -->
-        <div class="lg:col-span-7 rounded-3xl overflow-hidden glass-panel p-2 border border-borderSubtle min-h-[420px]">
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden glass-card p-2 border border-brandBorder min-h-[420px]">
           <iframe 
-            title="Mohi Cafe Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.442750974868!2d75.3211566!3d17.6765798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc418183495d479%3A0xb9d6b61050888cb6!2sMohi%20Cafe!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            title="The Cafe Pandharpur Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15206.02700570535!2d75.312984!3d17.674996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc418c271b3f1ad%3A0x7aa6364bf92bb6bb!2sThe%20Cafe.%20Pandharpur!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
             class="w-full h-full min-h-[420px] rounded-2xl border-0 brightness-95" 
             allowfullscreen="" 
             loading="lazy" 
@@ -508,364 +500,335 @@
   <footer class="py-12 px-4 border-t border-stone-800 text-stone-500 text-xs">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
       <div class="flex items-center gap-3">
-        <span class="font-serif text-lg font-bold gold-gradient-text uppercase">Mohi Cafe</span>
-        <span>• Pandharpur, Maharashtra</span>
+        <span class="font-display text-lg font-bold display-gradient uppercase">The Cafe.</span>
+        <span>• Gokul Nagar, Pandharpur</span>
       </div>
-      <p class="text-center">© 2026 Mohi Cafe. All Rights Reserved. Handcrafted for refined taste.</p>
+      <p class="text-center">© 2026 The Cafe. Pandharpur. All Rights Reserved. Crafted for unforgettable moments.</p>
       <div class="flex items-center gap-4 text-stone-400 text-base">
-        <a href="https://wa.me/918888050804" target="_blank" class="hover:text-goldAccent transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="tel:+918888050804" class="hover:text-goldAccent transition-colors"><i class="fa-solid fa-phone"></i></a>
-        <a href="https://maps.google.com/?cid=13391144229922180207" target="_blank" class="hover:text-goldAccent transition-colors"><i class="fa-solid fa-map-location-dot"></i></a>
+        <a href="https://maps.google.com/?q=The+Cafe+Pandharpur" target="_blank" class="hover:text-brandGold transition-colors"><i class="fa-solid fa-map-location-dot"></i></a>
       </div>
     </div>
   </footer>
 
-  <!-- FULLY FUNCTIONAL SLIDE-IN CART DRAWER -->
-  <div id="cartModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden transition-all duration-300">
-    <div class="fixed right-0 top-0 bottom-0 w-full max-w-md bg-cafeSurface h-full p-6 flex flex-col justify-between border-l border-borderSubtle shadow-2xl overflow-y-auto">
+  <!-- OPERATIONAL CART DRAWER WITH WHATSAPP CHECKOUT -->
+  <div id="cartDrawer" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden transition-all duration-300">
+    <div class="fixed right-0 top-0 bottom-0 w-full max-w-md bg-brandSurface h-full p-6 flex flex-col justify-between border-l border-brandBorder shadow-2xl overflow-y-auto">
       
-      <!-- Cart Header -->
       <div>
-        <div class="flex items-center justify-between pb-4 border-b border-borderSubtle">
+        <div class="flex items-center justify-between pb-4 border-b border-brandBorder">
           <div class="flex items-center gap-2.5">
-            <i class="fa-solid fa-bag-shopping text-goldAccent text-base"></i>
-            <h3 class="font-serif font-bold text-lg text-white">Your Order Basket</h3>
+            <i class="fa-solid fa-bag-shopping text-brandGold text-base"></i>
+            <h3 class="font-display font-bold text-lg text-white">Your Bistro Selection</h3>
           </div>
-          <button onclick="toggleCartModal(false)" class="text-stone-400 hover:text-white p-2 text-lg">
+          <button onclick="toggleCartDrawer(false)" class="text-stone-400 hover:text-white p-2 text-lg">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
 
-        <!-- Order Type Selection -->
-        <div class="grid grid-cols-2 gap-2 mt-4 p-1 bg-cafeCard rounded-xl border border-borderSubtle text-xs font-bold text-center">
-          <button type="button" onclick="setOrderType('Takeaway / Pickup')" id="btnTakeaway" class="py-2 rounded-lg bg-goldAccent text-black transition-all">Takeaway</button>
-          <button type="button" onclick="setOrderType('Dine-In Table Order')" id="btnDineIn" class="py-2 rounded-lg text-stone-400 hover:text-white transition-all">Dine-In</button>
+        <div class="grid grid-cols-2 gap-2 mt-4 p-1 bg-brandCard rounded-xl border border-brandBorder text-xs font-bold text-center">
+          <button type="button" onclick="selectOrderType('Dine-In Table Order')" id="typeDineIn" class="py-2 rounded-lg bg-brandGold text-black transition-all">Dine-In</button>
+          <button type="button" onclick="selectOrderType('Takeaway / Pickup')" id="typeTakeaway" class="py-2 rounded-lg text-stone-400 hover:text-white transition-all">Takeaway</button>
         </div>
 
-        <!-- Customer Inputs for Receipt -->
         <div class="mt-4 space-y-2">
-          <input type="text" id="orderCustName" placeholder="Your Name (For Kitchen Ticket)" class="w-full px-3.5 py-2.5 rounded-xl bg-cafeCard border border-borderSubtle text-xs text-white placeholder-stone-600 focus:border-goldAccent outline-none" />
-          <input type="text" id="orderCustNote" placeholder="Kitchen Instructions (e.g., Less spicy, extra cheese)" class="w-full px-3.5 py-2.5 rounded-xl bg-cafeCard border border-borderSubtle text-xs text-white placeholder-stone-600 focus:border-goldAccent outline-none" />
+          <input type="text" id="custNameInput" placeholder="Your Name (For Kitchen Slip)" class="w-full px-3.5 py-2.5 rounded-xl bg-brandCard border border-brandBorder text-xs text-white placeholder-stone-600 focus:border-brandGold outline-none" />
+          <input type="text" id="custNoteInput" placeholder="Special Chef Requests (e.g. Less ice, extra sauce)" class="w-full px-3.5 py-2.5 rounded-xl bg-brandCard border border-brandBorder text-xs text-white placeholder-stone-600 focus:border-brandGold outline-none" />
         </div>
 
-        <!-- Items Container -->
-        <div id="cartItemsList" class="py-4 space-y-3 max-h-[42vh] overflow-y-auto">
-          <!-- Populated by JavaScript -->
+        <div id="cartItemList" class="py-4 space-y-3 max-h-[42vh] overflow-y-auto">
+          <!-- Injected Dynamically -->
         </div>
       </div>
 
-      <!-- Cart Footer & WhatsApp Checkout -->
-      <div class="border-t border-borderSubtle pt-4 space-y-3">
+      <div class="border-t border-brandBorder pt-4 space-y-3">
         <div class="flex justify-between items-center text-sm font-semibold">
-          <span class="text-stone-400">Total Bill (Tax Incl.)</span>
-          <span id="cartTotalPrice" class="text-goldAccent text-xl font-serif font-bold">₹0</span>
+          <span class="text-stone-400">Total Bill Amount</span>
+          <span id="cartSubtotal" class="text-brandGold text-xl font-display font-bold">₹0</span>
         </div>
-        <p class="text-[10px] text-stone-500 text-center">Generates an instant, itemized digital receipt directly on Mohi Cafe's official WhatsApp line.</p>
+        <p class="text-[10px] text-stone-500 text-center">Dispatches an itemized digital order directly to The Cafe's official counter on WhatsApp.</p>
         
-        <button onclick="dispatchOrderWhatsApp()" class="w-full py-4 rounded-xl gold-gradient-bg text-black font-extrabold uppercase text-xs tracking-wider flex items-center justify-center gap-2 hover:brightness-110 shadow-lg shadow-goldAccent/15">
+        <button onclick="checkoutToWhatsApp()" class="w-full py-4 rounded-xl gold-gradient text-black font-extrabold uppercase text-xs tracking-wider flex items-center justify-center gap-2 hover:brightness-110 shadow-lg shadow-brandGold/15">
           <i class="fa-brands fa-whatsapp text-lg"></i> Send Order Via WhatsApp
         </button>
       </div>
+
     </div>
   </div>
 
-  <!-- JAVASCRIPT: LOGIC & ENGINES -->
+  <!-- JAVASCRIPT ENGINES -->
   <script>
-    // Authentic Menu Database
-    const catalog = [
+    // Authentic Bistro Menu Data
+    const menuCatalog = [
       {
-        id: 101,
-        category: 'beverage',
-        name: 'Classic Thick Cold Coffee',
-        price: 70,
-        desc: 'Signature hand-blended espresso served chilled with rich creamy dairy foam.',
+        id: 201,
+        category: 'coffee',
+        name: 'The Signature Cold Brew Float',
+        price: 90,
+        desc: 'Slow-steeped roasted coffee bean essence poured over artisanal vanilla ice cream.',
         image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80'
       },
       {
-        id: 102,
-        category: 'beverage',
-        name: 'Hot Mocha Indulgence',
-        price: 60,
-        desc: 'Dark roasted espresso poured over velvety steamed milk and warm cocoa.',
+        id: 202,
+        category: 'coffee',
+        name: 'Velvet Mocha Hazelnut Latte',
+        price: 80,
+        desc: 'Rich roasted espresso combined with toasted hazelnut notes and steamed cocoa milk.',
         image: 'https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80'
       },
       {
-        id: 103,
-        category: 'beverage',
-        name: 'Oreo Crunch Thick Shake',
-        price: 90,
-        desc: 'Crushed chocolate biscuits whipped with French vanilla bean ice cream.',
-        image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80'
-      },
-      {
-        id: 104,
+        id: 203,
         category: 'pizza',
-        name: 'Artisan Paneer Tikka Pizza',
-        price: 190,
-        desc: 'Tandoori spiced cottage cheese cubes, charred capsicum, onions and double mozzarella.',
+        name: 'Smoked Paneer Paprika Pizza',
+        price: 210,
+        desc: 'Charred spiced paneer, roasted bell peppers, fresh basil and artisan melted mozzarella.',
         image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80'
       },
       {
-        id: 105,
+        id: 204,
         category: 'pizza',
-        name: 'Margherita Double Cheese',
-        price: 140,
-        desc: 'Slow-simmered Italian tomato and basil concasse blanketed in gourmet mozzarella.',
+        name: 'Classic Margherita Supreme',
+        price: 160,
+        desc: 'Slow-simmered San Marzano style tomato base with gourmet double mozzarella.',
         image: 'https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=600&q=80'
       },
       {
-        id: 106,
-        category: 'burger',
-        name: 'Crispy Supreme Cheese Burger',
+        id: 205,
+        category: 'pasta',
+        name: 'Creamy Alfredo White Sauce Pasta',
+        price: 140,
+        desc: 'Penne tossed in garlic herb butter cream sauce with tender sweet corn & olives.',
+        image: 'https://images.unsplash.com/photo-1621996346565-e3d5d6281609?auto=format&fit=crop&w=600&q=80'
+      },
+      {
+        id: 206,
+        category: 'pasta',
+        name: 'Loaded Peri-Peri Crinkle Fries',
         price: 80,
-        desc: 'Crisp vegetable patty dressed with our house-made spicy sauce, pickles and cheddar.',
-        image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80'
-      },
-      {
-        id: 107,
-        category: 'burger',
-        name: 'Grilled Corn & Cheddar Sandwich',
-        price: 90,
-        desc: 'Triple-decker butter-grilled sourdough packed with sweet corn and melted cheese.',
-        image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80'
-      },
-      {
-        id: 108,
-        category: 'snack',
-        name: 'Fiery Peri-Peri French Fries',
-        price: 70,
-        desc: 'Golden fried crispy potato batons tossed in spicy peri-peri seasoning herbs.',
+        desc: 'Crisp golden potato crinkles tossed in hot African bird-eye chili spices.',
         image: 'https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80'
       },
       {
-        id: 109,
-        category: 'snack',
-        name: 'Toasted Garlic Herb Bread',
-        price: 85,
-        desc: 'Artisanal baguette slices toasted with herb-infused garlic butter and mozzarella.',
-        image: 'https://images.unsplash.com/photo-1619860860774-1e2e17343432?auto=format&fit=crop&w=600&q=80'
+        id: 207,
+        category: 'beverage',
+        name: 'Nutella Brownie Thick Shake',
+        price: 110,
+        desc: 'Real baked fudge brownie whipped with Nutella hazelnut spread & dairy gelato.',
+        image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80'
+      },
+      {
+        id: 208,
+        category: 'beverage',
+        name: 'Blue Curacao Mint Sparkler',
+        price: 80,
+        desc: 'Refreshing citrus mocktail layered with garden fresh mint leaves and sparkling soda.',
+        image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80'
       }
     ];
 
-    let currentCategory = 'all';
-    let searchQuery = '';
-    let cart = [];
-    let selectedOrderType = 'Takeaway / Pickup';
+    let activeCategory = 'all';
+    let activeQuery = '';
+    let cartItems = [];
+    let currentOrderType = 'Dine-In Table Order';
 
-    // RENDER MENU ITEMS
-    function renderCatalog() {
-      const grid = document.getElementById('menuGrid');
-      const noResults = document.getElementById('noResultsNotice');
+    function renderBistroCatalog() {
+      const grid = document.getElementById('bistroMenuGrid');
+      const notice = document.getElementById('emptyCatalogNotice');
 
-      const filtered = catalog.filter(item => {
-        const matchesCategory = currentCategory === 'all' || item.category === currentCategory;
-        const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                              item.desc.toLowerCase().includes(searchQuery.toLowerCase());
-        return matchesCategory && matchesSearch;
+      const matches = menuCatalog.filter(item => {
+        const catMatch = activeCategory === 'all' || item.category === activeCategory;
+        const searchMatch = item.name.toLowerCase().includes(activeQuery.toLowerCase()) ||
+                            item.desc.toLowerCase().includes(activeQuery.toLowerCase());
+        return catMatch && searchMatch;
       });
 
-      if (filtered.length === 0) {
+      if (matches.length === 0) {
         grid.innerHTML = '';
-        noResults.classList.remove('hidden');
+        notice.classList.remove('hidden');
         return;
       }
 
-      noResults.classList.add('hidden');
-      grid.innerHTML = filtered.map(item => `
-        <div class="glass-panel rounded-2xl overflow-hidden border border-borderSubtle hover:border-goldAccent/40 transition-all flex flex-col justify-between group">
+      notice.classList.add('hidden');
+      grid.innerHTML = matches.map(item => `
+        <div class="glass-card rounded-2xl overflow-hidden border border-brandBorder hover:border-brandGold/40 transition-all flex flex-col justify-between group">
           <div>
             <div class="relative h-44 overflow-hidden">
               <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-              <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-goldAccent font-extrabold text-xs">₹${item.price}</span>
+              <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-brandGold font-extrabold text-xs">₹${item.price}</span>
             </div>
             <div class="p-5 space-y-2">
-              <h3 class="font-bold text-sm text-white group-hover:text-goldAccent transition-colors">${item.name}</h3>
+              <h3 class="font-bold text-sm text-white group-hover:text-brandGold transition-colors">${item.name}</h3>
               <p class="text-xs text-stone-400 line-clamp-2 leading-relaxed">${item.desc}</p>
             </div>
           </div>
           <div class="p-5 pt-0">
-            <button onclick="addItemToCart(${item.id})" class="w-full py-3 rounded-xl bg-cafeSurface border border-borderSubtle hover:bg-goldAccent hover:text-black font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
-              <i class="fa-solid fa-plus text-[10px]"></i> Add To Basket
+            <button onclick="addToOrder(${item.id})" class="w-full py-3 rounded-xl bg-brandSurface border border-brandBorder hover:bg-brandGold hover:text-black font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-plus text-[10px]"></i> Add To Order
             </button>
           </div>
         </div>
       `).join('');
     }
 
-    // CATEGORY FILTERING
-    function setActiveCategory(cat) {
-      currentCategory = cat;
-      document.querySelectorAll('.cat-pill').forEach(btn => {
+    function setMenuFilter(cat) {
+      activeCategory = cat;
+      document.querySelectorAll('.menu-pill').forEach(btn => {
         if (btn.dataset.cat === cat) {
-          btn.className = 'cat-pill px-4 py-2 rounded-xl text-xs font-bold transition-all gold-gradient-bg text-black';
+          btn.className = 'menu-pill px-4 py-2 rounded-xl text-xs font-bold transition-all gold-gradient text-black';
         } else {
-          btn.className = 'cat-pill px-4 py-2 rounded-xl text-xs font-bold glass-panel text-stone-300 hover:text-white';
+          btn.className = 'menu-pill px-4 py-2 rounded-xl text-xs font-bold glass-card text-stone-300 hover:text-white';
         }
       });
-      renderCatalog();
+      renderBistroCatalog();
     }
 
-    // REAL-TIME SEARCH FILTER
-    function handleSearch(val) {
-      searchQuery = val.trim();
-      renderCatalog();
+    function filterSearch(val) {
+      activeQuery = val.trim();
+      renderBistroCatalog();
     }
 
-    // CART STATE ENGINE
-    function addItemToCart(id) {
-      const product = catalog.find(p => p.id === id);
-      const existing = cart.find(c => c.id === id);
-
+    function addToOrder(id) {
+      const item = menuCatalog.find(p => p.id === id);
+      const existing = cartItems.find(c => c.id === id);
       if (existing) {
         existing.qty += 1;
       } else {
-        cart.push({ ...product, qty: 1 });
+        cartItems.push({ ...item, qty: 1 });
       }
-
-      updateCartDrawer();
-      toggleCartModal(true);
+      refreshCartUI();
+      toggleCartDrawer(true);
     }
 
-    function modifyItemQty(id, change) {
-      const item = cart.find(c => c.id === id);
-      if (!item) return;
-
-      item.qty += change;
-      if (item.qty <= 0) {
-        cart = cart.filter(c => c.id !== id);
+    function changeItemQty(id, delta) {
+      const found = cartItems.find(c => c.id === id);
+      if (!found) return;
+      found.qty += delta;
+      if (found.qty <= 0) {
+        cartItems = cartItems.filter(c => c.id !== id);
       }
-      updateCartDrawer();
+      refreshCartUI();
     }
 
-    function updateCartDrawer() {
-      const container = document.getElementById('cartItemsList');
-      const badge = document.getElementById('navCartBadge');
-      const totalDisplay = document.getElementById('cartTotalPrice');
+    function refreshCartUI() {
+      const container = document.getElementById('cartItemList');
+      const badge = document.getElementById('navCartCount');
+      const subtotalEl = document.getElementById('cartSubtotal');
 
-      const totalItems = cart.reduce((acc, curr) => acc + curr.qty, 0);
-      const grandTotal = cart.reduce((acc, curr) => acc + (curr.price * curr.qty), 0);
+      const totalQty = cartItems.reduce((acc, cur) => acc + cur.qty, 0);
+      const totalCost = cartItems.reduce((acc, cur) => acc + (cur.price * cur.qty), 0);
 
-      badge.innerText = totalItems;
-      totalDisplay.innerText = '₹' + grandTotal;
+      badge.innerText = totalQty;
+      subtotalEl.innerText = '₹' + totalCost;
 
-      if (cart.length === 0) {
+      if (cartItems.length === 0) {
         container.innerHTML = `
           <div class="text-center py-10 text-stone-500">
             <i class="fa-solid fa-bag-shopping text-3xl mb-2 text-stone-600 block"></i>
-            <p class="text-xs">Your basket is currently empty.</p>
-            <p class="text-[11px] text-stone-600 mt-1">Explore our signature dishes from the menu.</p>
+            <p class="text-xs">Your order bag is currently empty.</p>
+            <p class="text-[11px] text-stone-600 mt-1">Explore our signature menu to add dishes.</p>
           </div>
         `;
         return;
       }
 
-      container.innerHTML = cart.map(item => `
-        <div class="flex items-center justify-between bg-cafeCard p-3 rounded-xl border border-borderSubtle">
+      container.innerHTML = cartItems.map(item => `
+        <div class="flex items-center justify-between bg-brandCard p-3 rounded-xl border border-brandBorder">
           <div>
             <h4 class="text-xs font-bold text-white">${item.name}</h4>
-            <p class="text-[11px] text-goldAccent font-semibold">₹${item.price} × ${item.qty} = ₹${item.price * item.qty}</p>
+            <p class="text-[11px] text-brandGold font-semibold">₹${item.price} × ${item.qty} = ₹${item.price * item.qty}</p>
           </div>
           <div class="flex items-center gap-2">
-            <button onclick="modifyItemQty(${item.id}, -1)" class="w-6 h-6 rounded-lg bg-stone-800 text-xs text-stone-200 hover:bg-goldAccent hover:text-black transition-colors">-</button>
+            <button onclick="changeItemQty(${item.id}, -1)" class="w-6 h-6 rounded-lg bg-stone-800 text-xs text-stone-200 hover:bg-brandGold hover:text-black transition-colors">-</button>
             <span class="text-xs font-bold w-4 text-center text-white">${item.qty}</span>
-            <button onclick="modifyItemQty(${item.id}, 1)" class="w-6 h-6 rounded-lg bg-stone-800 text-xs text-stone-200 hover:bg-goldAccent hover:text-black transition-colors">+</button>
+            <button onclick="changeItemQty(${item.id}, 1)" class="w-6 h-6 rounded-lg bg-stone-800 text-xs text-stone-200 hover:bg-brandGold hover:text-black transition-colors">+</button>
           </div>
         </div>
       `).join('');
     }
 
-    function toggleCartModal(show) {
-      const modal = document.getElementById('cartModal');
-      if (show) {
-        modal.classList.remove('hidden');
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cartDrawer');
+      if (open) {
+        drawer.classList.remove('hidden');
       } else {
-        modal.classList.add('hidden');
+        drawer.classList.add('hidden');
       }
     }
 
-    function setOrderType(type) {
-      selectedOrderType = type;
-      const btnTakeaway = document.getElementById('btnTakeaway');
-      const btnDineIn = document.getElementById('btnDineIn');
-
-      if (type === 'Takeaway / Pickup') {
-        btnTakeaway.className = 'py-2 rounded-lg bg-goldAccent text-black transition-all';
-        btnDineIn.className = 'py-2 rounded-lg text-stone-400 hover:text-white transition-all';
+    function selectOrderType(type) {
+      currentOrderType = type;
+      const btnDine = document.getElementById('typeDineIn');
+      const btnTake = document.getElementById('typeTakeaway');
+      if (type === 'Dine-In Table Order') {
+        btnDine.className = 'py-2 rounded-lg bg-brandGold text-black transition-all';
+        btnTake.className = 'py-2 rounded-lg text-stone-400 hover:text-white transition-all';
       } else {
-        btnDineIn.className = 'py-2 rounded-lg bg-goldAccent text-black transition-all';
-        btnTakeaway.className = 'py-2 rounded-lg text-stone-400 hover:text-white transition-all';
+        btnTake.className = 'py-2 rounded-lg bg-brandGold text-black transition-all';
+        btnDine.className = 'py-2 rounded-lg text-stone-400 hover:text-white transition-all';
       }
     }
 
-    // DISPATCH WHATSAPP ORDER RECEIPT
-    function dispatchOrderWhatsApp() {
-      if (cart.length === 0) {
-        alert("Please select items to add to your order first.");
+    function checkoutToWhatsApp() {
+      if (cartItems.length === 0) {
+        alert("Please select dishes to place an order.");
         return;
       }
 
-      const custName = document.getElementById('orderCustName').value.trim() || 'Guest Patron';
-      const custNote = document.getElementById('orderCustNote').value.trim() || 'None';
-      const grandTotal = cart.reduce((acc, curr) => acc + (curr.price * curr.qty), 0);
+      const name = document.getElementById('custNameInput').value.trim() || 'Valued Guest';
+      const notes = document.getElementById('custNoteInput').value.trim() || 'Standard preparation';
+      const grandTotal = cartItems.reduce((acc, cur) => acc + (cur.price * cur.qty), 0);
 
-      let msg = `🛒 *NEW DIGITAL ORDER - MOHI CAFE* 🛒\n`;
-      msg += `────────────────────────────\n`;
-      msg += `👤 *Customer Name:* ${custName}\n`;
-      msg += `📦 *Order Type:* ${selectedOrderType}\n`;
-      msg += `📝 *Notes:* ${custNote}\n`;
-      msg += `────────────────────────────\n`;
-      msg += `*ORDERED ITEMS:*\n`;
+      let text = `☕ *NEW ORDER - THE CAFE PANDHARPUR* ☕\n`;
+      text += `────────────────────────────\n`;
+      text += `👤 *Customer Name:* ${name}\n`;
+      text += `🍽️ *Dining Preference:* ${currentOrderType}\n`;
+      text += `📝 *Chef Notes:* ${notes}\n`;
+      text += `────────────────────────────\n`;
+      text += `*SELECTED ITEMS:*\n`;
 
-      cart.forEach((item, index) => {
-        msg += `${index + 1}. ${item.name}\n   └ Qty: ${item.qty} × ₹${item.price} = ₹${item.qty * item.price}\n`;
+      cartItems.forEach((i, idx) => {
+        text += `${idx + 1}. ${i.name}\n   └ ${i.qty} x ₹${i.price} = ₹${i.qty * i.price}\n`;
       });
 
-      msg += `────────────────────────────\n`;
-      msg += `💰 *Total Amount Payable:* ₹${grandTotal}\n`;
-      msg += `📍 *Destination:* Mohi Cafe, Kamat Plaza, Pandharpur\n`;
-      msg += `────────────────────────────\n`;
-      msg += `Please reply with the preparation time. Thank you!`;
+      text += `────────────────────────────\n`;
+      text += `💰 *Total Bill:* ₹${grandTotal}\n`;
+      text += `📍 *Store:* The Cafe, Gokul Nagar, Pandharpur\n`;
+      text += `────────────────────────────\n`;
+      text += `Please confirm preparation and wait time.`;
 
-      const encoded = encodeURIComponent(msg);
-      window.open(`https://wa.me/918888050804?text=${encoded}`, '_blank');
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
     }
 
-    // DISPATCH TABLE / CELEBRATION RESERVATION
-    function handleReservationSubmit(e) {
+    function handleReservation(e) {
       e.preventDefault();
+      const name = document.getElementById('resvName').value.trim();
+      const phone = document.getElementById('resvPhone').value.trim();
+      const date = document.getElementById('resvDate').value;
+      const time = document.getElementById('resvTime').value;
+      const guests = document.getElementById('resvGuests').value;
+      const occasion = document.getElementById('resvOccasion').value;
+      const notes = document.getElementById('resvNotes').value.trim() || 'None';
 
-      const name = document.getElementById('resName').value.trim();
-      const phone = document.getElementById('resPhone').value.trim();
-      const date = document.getElementById('resDate').value;
-      const time = document.getElementById('resTime').value;
-      const guests = document.getElementById('resGuests').value;
-      const occasion = document.getElementById('resOccasion').value;
-      const notes = document.getElementById('resNotes').value.trim() || 'None';
-
-      let msg = `🎉 *TABLE & CELEBRATION RESERVATION* 🎉\n`;
+      let msg = `✨ *TABLE & CELEBRATION BOOKING REQUEST* ✨\n`;
       msg += `────────────────────────────\n`;
-      msg += `👤 *Primary Contact:* ${name}\n`;
-      msg += `📞 *Phone Number:* ${phone}\n`;
-      msg += `📅 *Booking Date:* ${date}\n`;
-      msg += `⏰ *Time Slot:* ${time}\n`;
+      msg += `👤 *Guest Name:* ${name}\n`;
+      msg += `📞 *Contact:* ${phone}\n`;
+      msg += `📅 *Date:* ${date}\n`;
+      msg += `⏰ *Slot:* ${time}\n`;
       msg += `👥 *Number of Guests:* ${guests}\n`;
       msg += `🎈 *Occasion:* ${occasion}\n`;
-      msg += `💬 *Special Requests:* ${notes}\n`;
+      msg += `💬 *Special Setup:* ${notes}\n`;
       msg += `────────────────────────────\n`;
-      msg += `Please confirm if table space is reserved at Mohi Cafe.`;
+      msg += `Please confirm seating availability at The Cafe. Pandharpur.`;
 
-      const encoded = encodeURIComponent(msg);
-      window.open(`https://wa.me/918888050804?text=${encoded}`, '_blank');
+      window.open(`https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank');
     }
 
-    // Initialize Default States
     window.addEventListener('DOMContentLoaded', () => {
-      renderCatalog();
-      updateCartDrawer();
-      // Set default minimum date for reservation form to today
+      renderBistroCatalog();
+      refreshCartUI();
       const today = new Date().toISOString().split('T')[0];
-      document.getElementById('resDate').min = today;
-      document.getElementById('resDate').value = today;
+      document.getElementById('resvDate').min = today;
+      document.getElementById('resvDate').value = today;
     });
   </script>
 </body>
